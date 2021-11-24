@@ -121,8 +121,9 @@ button{
 
 /* DIV DA VITÓRIA */
 .vitoria{
+    margin-top: 5%;
     width: 50%;
-    height: 80%;
+    height: 60%;
     border: 1px solid tomato;
     position: absolute;
     left: 25%;
@@ -138,13 +139,15 @@ button{
 }
 
 .vitoria h1{
-    font-size: 50px;
-    color: tomato;
+    font-family: var(--fonte-3);
+    font-size: 15px;
+    color: var(--vermelho-primario);
+    margin-bottom: 15px;
 }
 
 .derrota{
     width: 50%;
-    height: 80%;
+    height: 60%;
     border: 1px solid tomato;
     position: absolute;
     left: 25%;
@@ -165,7 +168,7 @@ button{
 
 .empate{
     width: 50%;
-    height: 80%;
+    height: 60%;
     border: 1px solid tomato;
     position: absolute;
     left: 25%;
@@ -181,7 +184,7 @@ button{
 
 .empate h1{
     font-size: 50px;
-    color: tomato;
+    color: var(--Vermelho-claro);
 }
 
 .display{
@@ -216,4 +219,13 @@ button{
         padding: 14px;
         border-radius: 25px;
     }
+    .vitoria{
+    margin-top: 5%;
+    width: 50%;
+    height: 50%;
+    }
+    .vitoria h1{
+    font-size: 45px;
+    }
+
 }
