@@ -164,8 +164,10 @@ button{
 }
 
 .derrota h1{
-    font-size: 50px;
-    color: tomato;
+    font-family: var(--fonte-3);
+    font-size: 15px;
+    color: var(--vermelho-primario);
+    margin-bottom: 15px;
 }
 
 .empate{
@@ -186,8 +188,10 @@ button{
 }
 
 .empate h1{
-    font-size: 50px;
-    color: var(--Vermelho-claro);
+    font-family: var(--fonte-3);
+    font-size: 15px;
+    color: var(--vermelho-primario);
+    margin-bottom: 15px;
 }
 
 .display{
