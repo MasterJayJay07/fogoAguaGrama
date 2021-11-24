@@ -118,6 +118,77 @@ button{
 }
 /*FIM DA AREA DE INTERAÇÃO*/
 
+
+/* DIV DA VITÓRIA */
+.vitoria{
+    width: 50%;
+    height: 80%;
+    border: 1px solid tomato;
+    position: absolute;
+    left: 25%;
+    top: 10%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    text-align: center;
+    display: none;
+    flex-direction: column;
+}
+
+.vitoria h1{
+    font-size: 50px;
+    color: tomato;
+}
+
+.derrota{
+    width: 50%;
+    height: 80%;
+    border: 1px solid tomato;
+    position: absolute;
+    left: 25%;
+    top: 10%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    text-align: center;
+    display: none;
+}
+
+.derrota h1{
+    font-size: 50px;
+    color: tomato;
+}
+
+.empate{
+    width: 50%;
+    height: 80%;
+    border: 1px solid tomato;
+    position: absolute;
+    left: 25%;
+    top: 10%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    text-align: center;
+    display: none;
+}
+
+.empate h1{
+    font-size: 50px;
+    color: tomato;
+}
+
+.display{
+    display: inline-flex;
+}
+
+
 /*MEDIA QUERIE*/
 @media screen and (min-width:705px){
     header h1{
