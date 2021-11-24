@@ -135,8 +135,6 @@ button{
     background-color: white;
     text-align: center;
     flex-direction: column;
-    display: none;
-    
 }
 
 .vitoria h1{
@@ -160,7 +158,6 @@ button{
     background-color: white;
     text-align: center;
     flex-direction: column;
-    display: none;
 }
 
 .derrota h1{
@@ -184,7 +181,6 @@ button{
     background-color: white;
     text-align: center;
     flex-direction: column;
-    display: none;
 }
 
 .empate h1{
@@ -195,8 +191,11 @@ button{
 }
 
 .display{
-    display: inline-flex;
+    display: none;
 }
+/* .clicado {
+    border: 2px solid blue;
+} */
 
 
 /*MEDIA QUERIE*/
