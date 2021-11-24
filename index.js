@@ -22,11 +22,7 @@ button.addEventListener('click', gerarElementoMaquina);
 main.appendChild(button);
 
 
-//O que a condição de vitória faz?
-//Tipo, o cara venceu, o que acontece? aparece uma tela de vitória com uma imagem e um texto dizendo parabéns.
-
-//Gerar tela de condição de vitória.
-
+//Css do Projeto, gerar div ou section com as opções escritas: vitória, derrota ou empate;
 function telaDeResutado(valor){
     if(valor === 'vitoria'){
         const vit = document.getElementById('vitoria');
@@ -40,8 +36,19 @@ function telaDeResutado(valor){
         const vit = document.getElementById('empate');
         vit.classList.add('display')
     }
-    
 }
 
+//Função pra dar reload na pagina e começar a jogar novamente.
 
-//Css do Projeto, gerar div ou section com as opções escritas: vitória, derrota ou empate;
+function reload(){
+    return document.location.reload(true);
+}
+
+const buttonReloadVitoria = document.getElementById('reload-vitoria');
+const buttonReloadDerrota = document.getElementById('reload-derrota');
+const buttonReloadEmpate = document.getElementById('reload-empate');
+buttonReloadVitoria.addEventListener('click', reload);
+buttonReloadDerrota.addEventListener('click', reload);
+buttonReloadEmpate.addEventListener('click', reload);
+
+

@@ -133,8 +133,9 @@ button{
     justify-content: center;
     background-color: white;
     text-align: center;
-    display: none;
     flex-direction: column;
+    display: none;
+    
 }
 
 .vitoria h1{
@@ -155,6 +156,7 @@ button{
     justify-content: center;
     background-color: white;
     text-align: center;
+    flex-direction: column;
     display: none;
 }
 
@@ -176,6 +178,7 @@ button{
     justify-content: center;
     background-color: white;
     text-align: center;
+    flex-direction: column;
     display: none;
 }
 
