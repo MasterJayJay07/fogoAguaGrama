@@ -1,0 +1,148 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@900&family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+/* FONTS */
+
+/* VARIÁVEIS */
+:root {
+    --Azul-primario: #0000FF;
+    --Azul-escuro: #00008B;
+    --Azul-claro: #00BFFF;
+    --Amarelo-primario: #FFFF00;
+    --vermelho-primario: #FF0000;
+    --Vermelho-claro: #DC143C;
+    --Verde-lime: #00FF00;
+    --cinza-escuro: #1C1C1C;
+    --Fonte-1:'Luckiest Guy';
+    --fonte-2:'Londrina Solid';
+    --fonte-3:'Press Start 2P'   
+}
+/* FIM DAS VARIÁVEIS */
+
+/*ESTILO DO BACKGROUND*/
+body{
+    background-image: url('https://cdn.wallpapersafari.com/15/53/f8R9uL.jpg');
+    background-size: 50%;
+}
+/*FIM DO ESTILO DO BACKGROUND*/
+
+/*HEADER E FILHOS*/
+header{
+    width: max(300px, 100%);
+}
+header h1{
+    display: flex;
+    justify-content: center;
+    font-size: 26px;
+    padding: 4%;
+    color: var(--Amarelo-primario);
+    font-family: var(--Fonte-1);
+}
+/*FIM DO HEADER E FILHOS*/
+
+/*PARTE DAS REGRAS*/
+article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+article h2{
+    font-size: 24px;
+    font-family: var(--fonte-2);
+    color: var(--vermelho-primario);
+}
+article p{
+    color: var(--Amarelo-primario);
+    font-size: 20px;
+    font-family: var(--fonte-2);
+    padding: 15px;
+    text-align: center;
+}
+article li{
+    font-family: var(--fonte-2);
+    color: var(--vermelho-primario);
+    font-size: 16px;
+}
+/*FIM DA PARTE DAS REGRAS*/
+
+/*AREA DE INTERAÇÃO*/
+main h3{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display:flex;
+    justify-content: center;
+    padding: 10px;
+    color: var(--Amarelo-primario);
+    font-size: 22px;
+}
+main ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.pokemons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+li img{
+    height: 150px;
+    width: 150px;
+}
+button{
+    margin-top: 5px;
+    padding: 8px;
+    border-radius: 25px;
+}
+#Grama{
+    font-size: 12px;
+    border-color: var(--Verde-lime);
+    background-color: var(--Verde-lime);
+    color: var(--cinza-escuro);
+    font-family: var(--fonte-3);
+}
+#Agua{
+    font-size: 12px;
+    border-color: var(--Azul-claro);
+    background-color: var(--Azul-claro);
+    color: var(--cinza-escuro);
+    font-family: var(--fonte-3);
+}
+#Fogo{
+    font-size: 12px;
+    border-color: var(--Vermelho-claro);
+    background-color: var(--Vermelho-claro);
+    color: var(--cinza-escuro);
+    font-family: var(--fonte-3);
+}
+/*FIM DA AREA DE INTERAÇÃO*/
+
+/*MEDIA QUERIE*/
+@media screen and (min-width:705px){
+    header h1{
+        font-size: 40px;
+        padding: 2%;
+    }
+    article h2{
+        font-size: 32px;
+    }
+    article p{
+        font-size: 28px;
+        padding-left: 40px;
+        padding-right: 40px;
+    } 
+    article li{
+        font-size: 22px;
+    }
+    main h3{
+        margin-top: 25px;
+        margin-bottom: 35px;
+        font-size: 28px;
+    }
+    button{
+        margin-top: 5px;
+        padding: 14px;
+        border-radius: 25px;
+    }
+}
