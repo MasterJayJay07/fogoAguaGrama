@@ -1,6 +1,7 @@
 const buttons = document.getElementsByClassName('btn')
 const main = document.getElementById('main');
 const button = document.createElement('button');
+button.classList.add('estilo-button');
 button.innerText = 'Jogar'
 main.appendChild(button);
 
