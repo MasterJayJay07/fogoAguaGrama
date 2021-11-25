@@ -1,11 +1,14 @@
 const buttons = document.getElementsByClassName('btn')
 const main = document.getElementById('main');
 const button = document.createElement('button');
+const pais = document.getElementsByClassName("pokemons")
 button.classList.add('estilo-button');
 button.innerText = 'Jogar'
 main.appendChild(button);
 
+function marcar(){
 
+}
 //variável que será usada para validar com a escolha da máquina
 let escolhaAtual = ""
 let elementoMaquina = "";
@@ -13,8 +16,11 @@ let elementoMaquina = "";
 const arrElementos = ['Grama', 'Agua', 'Fogo'];
 
 function marcarPai(e){
+    for(let i=0; i<pais.length; i++){
+        pais[i].classList.remove("clicado")
+    }
     let cel = e.parentElement
-    cel.classList.toggle("clicado")
+    cel.classList.add("clicado")
 }
 
 //função que adiciona um valor ao elementoMaquina
@@ -39,25 +45,10 @@ for(let i = 0; i < buttons.length; i++){
     buttons[i].addEventListener('click', function(){
         let atual = marcarEscolha(buttons[i])
         escolhaAtual=atual
+        marcarPai(buttons[i])
     })
 }
 
-//
-// function telaDeResutado(valor){
-//     if(valor === 'vitoria'){
-//         const vit = document.getElementById('vitoria');
-//         vit.classList.remove('display')
-//     }
-//     if(valor === 'derrota'){
-//         const vit = document.getElementById('derrota');
-//         vit.classList.remove('display')
-//     }
-//     if(valor === 'empate'){
-//         const vit = document.getElementById('empate');
-//         vit.classList.remove('display')
-//     }
-// }
-//
 button.addEventListener("click", function(){
     let escolhaDoJogador = escolhaAtual
     let escolhaDaMaquina = gerarElementoMaquina()

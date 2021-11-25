@@ -146,7 +146,6 @@ button{
     flex-direction: column;
 }
 
-
 .derrota{
     width: 50%;
     height: 60%;
@@ -162,7 +161,6 @@ button{
     text-align: center;
     flex-direction: column;
 }
-
 
 .empate{
     width: 50%;
@@ -187,13 +185,9 @@ button{
     margin-bottom: 15px;
 }
 
-
 .display{
     display: none;
 }
-/* .clicado {
-    border: 2px solid blue;
-} */
 
 .estilo-button{
     /* background-color: tomato; */
@@ -220,6 +214,12 @@ button{
     font-family: var(--fonte-3);
     color: var(--Amarelo-primario);
     font-size: 15px;
+}
+
+.clicado {
+    transform: scale(1.1);
+    background-color: #00000050;
+    border-radius: 5px;
 }
 
 
