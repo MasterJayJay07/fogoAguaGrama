@@ -182,7 +182,7 @@ button{
 
 .estiloh1{
     font-family: var(--fonte-3);
-    font-size: 25px;
+    font-size: 15px;
     color: var(--vermelho-primario);
     margin-bottom: 15px;
 }
@@ -219,6 +219,7 @@ button{
 .fraseFinal{
     font-family: var(--fonte-3);
     color: var(--Amarelo-primario);
+    font-size: 15px;
 }
 
 
@@ -254,10 +255,13 @@ button{
     width: 50%;
     height: 50%;
     }
-    /* .vitoria h1{
-    font-size: 45px;
-    } */
 
+    .estiloh1{
+        font-size: 25px;
+    }
+    .fraseFinal{
+        font-size: 20px;
+    }
 }
 
 @media (max-width:425px) {
