@@ -5,6 +5,7 @@ button.classList.add('estilo-button');
 button.innerText = 'Jogar'
 main.appendChild(button);
 
+
 //variável que será usada para validar com a escolha da máquina
 let escolhaAtual = ""
 let elementoMaquina = "";
@@ -99,5 +100,9 @@ button.addEventListener("click", function(){
         const vit = document.getElementById('empate');
         vit.classList.remove('display')
     }
+    for(let i=0; i<paragrafo.length; i++){
+        paragrafo[i].innerText = `O computador escolheu ${elementoMaquina}`
+    }
 })
 
+const paragrafo = document.getElementsByClassName('fraseFinal');

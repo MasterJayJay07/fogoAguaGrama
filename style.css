@@ -8,6 +8,7 @@
 :root {
     --Azul-primario: #0000FF;
     --Azul-escuro: #00008B;
+    --Azul-escuro2: #000050FF;
     --Azul-claro: #00BFFF;
     --Amarelo-primario: #FFFF00;
     --vermelho-primario: #FF0000;
@@ -140,17 +141,11 @@ button{
     text-align: center;
     align-items: center;
     justify-content: center;
-    background-color: white;
+    background-color: var(--Azul-escuro2);
     text-align: center;
     flex-direction: column;
 }
 
-.vitoria h1{
-    font-family: var(--fonte-3);
-    font-size: 15px;
-    color: var(--vermelho-primario);
-    margin-bottom: 15px;
-}
 
 .derrota{
     width: 50%;
@@ -163,17 +158,11 @@ button{
     text-align: center;
     align-items: center;
     justify-content: center;
-    background-color: white;
+    background-color: var(--Azul-escuro2);
     text-align: center;
     flex-direction: column;
 }
 
-.derrota h1{
-    font-family: var(--fonte-3);
-    font-size: 15px;
-    color: var(--vermelho-primario);
-    margin-bottom: 15px;
-}
 
 .empate{
     width: 50%;
@@ -186,17 +175,18 @@ button{
     text-align: center;
     align-items: center;
     justify-content: center;
-    background-color: white;
+    background-color: var(--Azul-escuro2);
     text-align: center;
     flex-direction: column;
 }
 
-.empate h1{
+.estiloh1{
     font-family: var(--fonte-3);
-    font-size: 15px;
+    font-size: 25px;
     color: var(--vermelho-primario);
     margin-bottom: 15px;
 }
+
 
 .display{
     display: none;
@@ -214,6 +204,21 @@ button{
     background-color: #121420;
     color: white;
     font-family: var(--fonte-3);
+}
+
+.estilo-button-final{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 12px;
+    border-color: #121420;
+    background-color: #121420;
+    color: white;
+    font-family: var(--fonte-3);
+}
+
+.fraseFinal{
+    font-family: var(--fonte-3);
+    color: var(--Amarelo-primario);
 }
 
 
@@ -249,9 +254,9 @@ button{
     width: 50%;
     height: 50%;
     }
-    .vitoria h1{
+    /* .vitoria h1{
     font-size: 45px;
-    }
+    } */
 
 }
 
